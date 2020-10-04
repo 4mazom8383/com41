@@ -1,5 +1,7 @@
 # Display a box
+print("Please enter a character for the eye")
+eye = input ()
 print("##########")
-print("#  X  X  #")
-print("#   __   #")
+print("# " + eye +  "    "  +  eye +  " #")
+print("#  ----  #")
 print("##########")
