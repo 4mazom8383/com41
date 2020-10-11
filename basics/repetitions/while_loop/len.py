@@ -1,3 +1,4 @@
+#Length a phrase
 print("Please enter a phrase:")
 phrase = str(input())
 
@@ -7,6 +8,3 @@ while (word < len(phrase) ):
 
   word = word + 1
   print("Boap ", end="")
-
-#while ():
-
