@@ -15,7 +15,7 @@ def menu():
 
 
 #Run the list
-def run ():
+def run():
   #route = []
   print("Working out escape route...\n")
 
