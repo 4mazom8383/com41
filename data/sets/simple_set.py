@@ -6,7 +6,8 @@ def observed():
   return observations
 
 def run():
-  print(observed())
+  run = observed()
+  print(run)
 
 run()
 
