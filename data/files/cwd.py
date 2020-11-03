@@ -12,9 +12,12 @@ print("")
 print("")
 
 def cwd():
-  
+
+  #Find the folder path
   path = os.getcwd()
   print(f"Current Working Folder Path: {path}")
+  
+  #Folder content
   print("The folder contains the following:")
   for file in os.listdir(path):
     print(file)   
