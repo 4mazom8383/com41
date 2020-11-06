@@ -28,8 +28,8 @@ def save(file_path, data):
 
 #Connecting the two paths Books and Section-Books
 def run():
-  data = search("data/files/txt/books.txt")
-  save("data/files/txt/section-books.txt", data)
+  data = search("data/files/txt2/books.txt")
+  save("data/files/txt2/section-books.txt", data)
 
 
 run()

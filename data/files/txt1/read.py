@@ -15,7 +15,7 @@ def search(filepath):
 
 
 def run():
-  search("data/files/txt/data.txt")
+  search("data/files/txt1/data.txt")
 
 
 run()
