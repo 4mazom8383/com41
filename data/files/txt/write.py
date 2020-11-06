@@ -14,7 +14,7 @@ def search(file_path):
     print("Done!")
     return(sections, books) 
 
-
+#print and save data
 def save(file_path, data):
   print("Saving...")
 
@@ -26,6 +26,7 @@ def save(file_path, data):
     print(f"Books: {data[1]}\n")
   print("Done!")
 
+#Connecting the two paths Books and Section-Books
 def run():
   data = search("data/files/txt/books.txt")
   save("data/files/txt/section-books.txt", data)
