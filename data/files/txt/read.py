@@ -11,7 +11,7 @@ def search(filepath):
   with open(filepath) as file:
     for line in file:
       print(f"Looked in {line}", end= "")
-  print("...Done!")
+  print("\n...Done!")
 
 
 def run():
