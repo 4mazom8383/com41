@@ -8,10 +8,13 @@ def search(file_name):
       #Dived the sentence to 2 sections
       if line.startswith("Section"):
         section = line.split(":")[1][:-1]
+        #parts = line.split(":")
+        #section = parts[1].strip()
 
       #Add the second section to the empthy variable
       elif (section in data):
         data[section].append(line[:-1])
+        #data[section].append(line.strip())
         
       # Add the remaining list to variable section
       # The list that not start with "Section"  
@@ -38,6 +41,6 @@ def run():
     #for item in data.items():
       #section = item[0]
       #books = item[1]
-      
+
 run()  
 #search("data/files/txt3/books.txt")
