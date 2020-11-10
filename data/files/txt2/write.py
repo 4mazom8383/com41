@@ -11,6 +11,7 @@ def search(file_path):
         sections.append(parts[1])
       else:
         books.append(line)
+
     print("Done!")
     return(sections, books) 
 
@@ -20,10 +21,10 @@ def save(file_path, data):
 
   with open(file_path, "w") as file:
     file.write(f"Sections: {data[0]}\n")
-    print(f"\nSections: {data[0]}")
+    #print(f"\nSections: {data[0]}")
 
     file.write(f"Books: {data[1]}")
-    print(f"Books: {data[1]}\n")
+   # print(f"Books: {data[1]}\n")
   print("Done!")
 
 #Connecting the two paths Books and Section-Books
