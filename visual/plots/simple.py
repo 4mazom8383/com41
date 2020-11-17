@@ -17,6 +17,8 @@ def display(x, y):
   plt.plot(x, y, 'ro--') # will display a red dashed line
   plt.show()
 
+
+
 def run():
   x = [1,2,3,4,5]
   y = [1, 4, 9, 16, 25]
