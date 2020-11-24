@@ -9,7 +9,7 @@ second_key = None
 def read_data(file_path):
   global first_key, second_key
 
-  with open(file_path) as csv_file:
+  with open(file_path, 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
     header = next(csv_reader)
 
@@ -22,13 +22,13 @@ def read_data(file_path):
       second_key:[ ]
     }
 
-    for row in csv_file:
+    for row in csv_reader:
       data[first_key].append(row[0].strip())
       data[second_key].append(row[1].strip())
 
 
-    print(data[first_key])
-    print(data[second_key])
+    #print(data[first_key])
+    #print(data[second_key])
     #print(data)
     return data
 
@@ -46,6 +46,4 @@ def run():
   plt.show()
 
 
-
 run()
-

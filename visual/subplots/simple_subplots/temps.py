@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 def read_data(file_path):
   temps = []
 
-  with open ('visual/subplots/temps.txt') as file:
+  with open (file_path) as file:
     
     for line in file:
       temp = int(line.strip())
@@ -13,7 +13,7 @@ def read_data(file_path):
 
 
 def run():
-  data = read_data('visual/subplots/temps.txt')
+  data = read_data('visual/subplots/simple_subplots/temps.txt')
 
   fig, axs = plt.subplots(1, 2)
 
