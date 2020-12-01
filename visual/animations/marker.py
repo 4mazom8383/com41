@@ -5,10 +5,13 @@ fig, ax = plt.subplots()
     
 def animate(frame):    
   # your code here
+
+  
   #Cla.() shows only the current position of our marker.
   ax.cla()
   ax.set_xlim(0,10)
   ax.set_ylim(0,10)
+
   ax.plot(frame,frame, 'ro')
      
 def run():

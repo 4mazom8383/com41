@@ -1,28 +1,62 @@
 import matplotlib.pyplot as plt
 
-#x = [0, 5, 10]
-#y = [0, 50, 100]
 
-##plt.plot(x, y)
-#plt.show()
 
-def display(x, y):
-  #plt.plot(x, y)#solid line
-  #plt.plot(x, y, 'o')   # will display circle markers
-  #plt.plot(x, y, 's')   # will display square markers
-  #plt.plot(x, y, 'o-')  # will display circle markers with a solid line
-  #plt.plot(x, y, 'o--') # will display circle markers with a dashed line
-  #plt.plot(x, y, 'o:')  # will display circle markers with a dotted line
-  #plt.plot(x, y, 'yo')   # will display yellow markers
-  plt.plot(x, y, 'ro--') # will display a red dashed line
-  plt.show()
+def combined():
+
+
+
+  fig, axs = plt.subplots(1, 1)
+
+  x1 =   [ 3,5,7]
+
+  y1 =   [ 3,5,3] 
+
+
+
+  x2 =   [ 3,5,7]
+
+  y2 =   [ 5,3,5] 
+
+
+
+  x3 =   [ 3,3,7]
+
+  y3 =   [ 3,5,4]
+
+
+
+  x4 =   [ 7,7,3]
+
+  y4 =   [ 3,5,4] 
+
+
+
+
+
+  axs.plot(x1, y1, 'ro')
+
+  axs.plot(x2, y2, 'bo:')
+
+  axs.plot(x3, y3, 'go--')
+
+  axs.plot(x4, y4, 'yo--')
 
 
 
 def run():
-  x = [1,2,3,4,5]
-  y = [1, 4, 9, 16, 25]
 
-  display(x, y)
+  combined()
+
+  plt.show()
+
+
+
+
 
 run()
+
+
+
+
+
