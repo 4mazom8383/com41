@@ -1,37 +1,35 @@
-class Human:
-  # Constant (Once intial value assigned, does not change)
-  energy = 100
+from inhabitant import Inhabitant
+class Human(Inhabitant):
 
-  # A class attribute
-  #laws = "Protect, Obey and Survive"
+  # initialiser
+  def __init__(self, name="Human", age=0):
+    super().__init__ (name,age)
 
-  # A class method
-  #def the_laws():
-  #  print(Robot.laws)
+  # magic methods
+  def __repr__(self):
+    return f'human(name={self.name}, age={self.age}, energy={self.energy})'
 
-  # An initialiser (special instance method)
-  def __init__(self):
+  def __str__(self):
+    return f'My name is {self.name} and I am {self.age} years old and my energy is {self.energy}.'
 
-    # An instance attribute
-    self.name = "Human"
-    self.age = 0
-    self.energy = Human.energy
-
-  # An instance method
+  # instance methods
   def display(self):
-    print(f"I am {self.name} and I am {self.age} and my energy is {self.energy}")
-
-  def growth(self):
-    self.age += 1
+    print(f"I am {self.name}")
 
 
 if (__name__ == "__main__"):
-  Human = Human()
-
-  Human.growth()
-
-  Human.display()
-
+  
+  human = Human()
+  print(repr(human))
+  human.eat(99)
+  
 
 
   
+  ###print(repr(human))
+  ##human.move(10)
+  #print(repr(human))
+  #human.eat(5)
+  #print(repr(human))
+  #human.eat(20)
+  #print(repr(human))
