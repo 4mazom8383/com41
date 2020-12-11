@@ -1,4 +1,5 @@
-class Inhabitant:
+from abc import ABC
+class Inhabitant(ABC):
 
   # class (constant) attribute
   MAX_ENERGY = 100

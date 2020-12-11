@@ -6,40 +6,36 @@ class Planet:
   # An initialiser (special instance method)
   def __init__(self):
     # An instance attribute as empty list
-    self.inhabitants = {
-      'humans':[],
-      'robots':[]
-    }
+    self.inhabitants = []
 
     
 
   def __repr__(self):
-    return f"planet(humans={self.inhabitants['humans']}, robots={self.inhabitants['robots']})"
+    return f"planet(inhabitants={self.inhabitants}"
 
   def __str__(self):
-    return f"This planet has {len(self.inhabitants['humans'])} humans and {len(self.inhabitants['robots'])} robots."
+    return f"This planet has {len(self.inhabitants)} inhabitants"
 
 
 
   # Add
-  def add_human(self, human):
-    self.inhabitants['humans'].append(human)
-
-  def add_robot(self, robot):
-    self.inhabitants['robots'].append(robot)
-
+  def add(self, inhabitant):
+    self.inhabitants.append(inhabitant)
 
   # Remove
-  def remove_human(self, human):
-    self.inhabitants['humans'].remove(human)
+  def remove(self, inhabitant):
+    self.inhabitants.remove(inhabitant)
 
-  def remove_robot(self, robot):
-    self.inhabitants['robots'].remove(robot)
+
 
 
 if (__name__ == "__main__"):
   planet = Planet()
+
   print(repr(planet))
-  planet.add_human(prins)
+
+  planet.add("prins")
+
   print(repr(planet))
+
   print(planet)
